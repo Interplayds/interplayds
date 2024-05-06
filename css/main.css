@@ -1,0 +1,237 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.continer {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin: 80px 0px 48px 0px;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 63px;
+  color: #1c1c1c;
+  margin: 0px 0px 8px 0px;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+  margin: 0px 0px 32px 0px;
+}
+
+/* form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  outline: 2px solid #ebebeb;
+  background: #ffffff;
+  border-radius: 16px;
+  width: 800px;
+  margin-bottom: 32px;
+}
+
+label {
+  display: inline-block;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #464646;
+  width: 100%;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+/* margins */
+.margine-inputs {
+  margin: 0px 12px;
+}
+.margine-form {
+  margin-bottom: 16px;
+}
+
+/* inputs */
+input {
+  color: #1c1c1c;
+  display: block;
+  width: 100%;
+  text-align: start;
+  background-color: white;
+  cursor: text;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 16px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #c0c0c0;
+}
+
+input:hover {
+  border-color: #888888;
+}
+input:active {
+  border-color: #f6b51f;
+}
+
+input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #f6b51f;
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(255, 182, 29, 0.2);
+}
+
+.double-input {
+  display: flex;
+  width: 100%;
+}
+
+.double-input div {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* select */
+
+select {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1c1c1c;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px 12px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select:hover {
+  border-color: #888888;
+}
+
+select:active {
+  border-color: #f6b51f;
+}
+
+select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #f6b51f;
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(255, 182, 29, 0.2);
+}
+
+/* buttons */
+.btn-position {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  display: inline-block;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 13.5px 16px;
+  border-radius: 8px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #f6b51f;
+}
+
+.btn-primary:hover {
+  background-color: #da9900;
+}
+
+.btn-primary:active {
+  background-color: #8c6202;
+}
+
+.btn-primary:focus {
+  background-color: #f6b51f;
+  border-color: #f6b51f;
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(255, 182, 29, 0.4);
+}
+
+.btn-secondary {
+  color: #1c1c1c;
+  background-color: #ffffff;
+  border: 1px solid #f6b51f;
+}
+
+.btn-secondary:hover {
+  background-color: #faf2e0;
+}
+
+.btn-secondary:active {
+  background-color: #f4d899;
+}
+
+.btn-secondary:focus {
+  background-color: #f4d899;
+  border-color: #f6b51f;
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(255, 182, 29, 0.4);
+}
+
+/* links */
+a {
+  color: #085ee0;
+  text-decoration: underline;
+  cursor: pointer;
+}
